@@ -86,11 +86,11 @@ background-image: url(../public/images/cover.jpg);
   }
 
   .mist1{
-    @apply absolute top-0 bottom-0 opacity-100 scale-150;
+    @apply hidden top-0 bottom-0 opacity-100 md:block md:absolute md:scale-150;
   }
 
   .mist2{
-    @apply absolute top-0 bottom-[1rem] opacity-100 scale-150;
+    @apply absolute top-0 bottom-[1rem] opacity-100 md:scale-150;
   }
 
   .tree{
@@ -98,8 +98,8 @@ background-image: url(../public/images/cover.jpg);
   }
 
   .rock{
-    @apply hidden lg:inline lg:absolute right-[3rem] bottom-[-8rem] translate-x-[-10rem]
-    translate-y-[5rem] ;
+    @apply hidden lg:inline lg:absolute right-[3rem] bottom-[-8rem] lg:translate-x-[-10rem]
+    lg:translate-y-[5rem] ;
   }
 }
 
@@ -206,7 +206,7 @@ background-image: url(../public/images/cover.jpg);
 
 // Characters //
 .characters{
-  @apply h-screen w-full mt-[5rem];
+  @apply h-auto w-full mt-[5rem];
 
   .topRow{
     @apply grid grid-cols-2 ;

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import rock from '../public/images/rock.png'
 import tree from '../public/images/tree.png'
 import mist1 from '../public/images/mist1.png'
@@ -7,15 +7,6 @@ import mist2 from '../public/images/mist2.png'
 import { motion } from 'framer-motion'
 
 export default function Home() {
-  // parallax
-  const [offsetX, setOffsetX] = useState(0);
-  const handleScroll = () => setOffsetX(window.pageYOffset);
-
-  useEffect(() => {
-  window.addEventListener("scroll", handleScroll);
-
-  return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <div className="home">
@@ -60,7 +51,6 @@ export default function Home() {
         initial={{x: "0%"}}
         whileInView={{ x: "-5%" }}
         transition={{duration:2,delay:0.2}}
-        // style={{transform: `translateX(-${offsetX * 0.1}px)` }}
         className='tree'>
         <Image
           src={tree} alt='tree'

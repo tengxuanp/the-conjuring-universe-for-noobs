@@ -63,17 +63,17 @@ button {
   @apply flex justify-center self-center text-4xl text-mYellow;
 }
 .home .mist1 {
-  @apply absolute top-0 bottom-0 opacity-100 scale-150;
+  @apply hidden top-0 bottom-0 opacity-100 md:block md:absolute md:scale-150;
 }
 .home .mist2 {
-  @apply absolute top-0 bottom-[1rem] opacity-100 scale-150;
+  @apply absolute top-0 bottom-[1rem] opacity-100 md:scale-150;
 }
 .home .tree {
   @apply hidden lg:inline lg:absolute lg:left-[-15rem] lg:bottom-[-1.5rem];
 }
 .home .rock {
-  @apply hidden lg:inline lg:absolute right-[3rem] bottom-[-8rem] translate-x-[-10rem]
-    translate-y-[5rem];
+  @apply hidden lg:inline lg:absolute right-[3rem] bottom-[-8rem] lg:translate-x-[-10rem]
+    lg:translate-y-[5rem];
 }
 
 .timeline {
@@ -154,7 +154,7 @@ button {
 }
 
 .characters {
-  @apply h-screen w-full mt-[5rem];
+  @apply h-auto w-full mt-[5rem];
 }
 .characters .topRow {
   @apply grid grid-cols-2;
