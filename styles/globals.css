@@ -55,9 +55,8 @@ button {
 }
 
 .home {
-  @apply h-screen w-full flex justify-center self-center overflow-hidden;
-  background-image: url(../public/images/cover.jpg);
-  @apply bg-no-repeat bg-cover bg-center bg-fixed;
+  @apply h-screen w-full flex justify-center self-center overflow-hidden
+bg-homeCoverM md:bg-homeCover bg-no-repeat bg-cover bg-center bg-fixed;
 }
 .home .title {
   @apply flex justify-center self-center text-4xl text-mYellow;

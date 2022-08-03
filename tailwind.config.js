@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'homeCover':"url('/assets/images/test.jpg')",
+        'homeCoverM':"url('/images/coverM.jpg')",
+        'homeCover':"url('/images/cover.jpg')",
       },
       colors:{
         'mYellow':'#FFE600',
